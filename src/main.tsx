@@ -1,13 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
 
-import { ReactRouterObj } from "./routes/routes";
+import { ReactRouterObj } from './routes/routes';
 
 // Render your React component instead
-const root = createRoot(document.getElementById("root") as HTMLElement);
+const root = createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <RouterProvider router={ReactRouterObj} />
-  </StrictMode>
+  </React.StrictMode>,
 );
