@@ -1,24 +1,20 @@
 module.exports = {
-  testEnvironment: "jsdom",
-  // setupFilesAfterEnv: [
-  //   '<rootDir>/src/setupTests.ts',
-  // ],
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   transform: {
-    "^.+\\.(t|j)sx?$": [
-      "@swc/jest",
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
       {
         jsc: {
           parser: {
-            syntax: "typescript",
+            syntax: 'typescript',
             jsx: true,
-            // decorators: true,
+            decorators: true,
           },
           transform: {
             react: {
-              runtime: "automatic",
+              runtime: 'automatic',
             },
-            // legacyDecorator: true,
-            // decoratorMetadata: true,
           },
         },
       },
