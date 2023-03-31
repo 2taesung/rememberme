@@ -1,6 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import Layout from "./Layout";
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App';
+import MapSection from '../components/MapSection';
+import Layout from './Layout';
 
 type RouterItem = {
   path: string;
@@ -9,8 +10,12 @@ type RouterItem = {
 
 export const RouterInfo: RouterItem[] = [
   {
-    path: "/",
+    path: '/',
     element: <App />,
+  },
+  {
+    path: '/map',
+    element: <MapSection />,
   },
 ];
 
