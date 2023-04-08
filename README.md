@@ -7,7 +7,7 @@
 
 ## 🔗 배포링크
 
-[🔗 배포 링크 이동]()
+[🔗 배포 링크 이동](rememberme-ten.vercel.app)
 
 ## 💻 실행방법
 
@@ -42,7 +42,6 @@ npm && npm dev
 
 ## ⚠️ 주의사항
 
-```
 - LottieFile react version conflict
+
 [🔗 관련 이슈 링크](https://stackoverflow.com/questions/72184976/getting-error-in-while-installing-react-lottie-in-react18/)
-```
