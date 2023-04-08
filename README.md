@@ -7,7 +7,7 @@
 
 ## 🔗 배포링크
 
-[🔗 배포 링크 이동](rememberme-ten.vercel.app)
+[🔗 배포 링크 이동](https://rememberme-ten.vercel.app/)
 
 ## 💻 실행방법
 
