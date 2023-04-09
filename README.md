@@ -5,6 +5,10 @@
 다양한 수단들로 암기를 시키는 앱 서비스.
 1단계 목표는 장소를 이용해 암기를 트리거 시킨다.
 
+## 💿 개발 환경 및 스택
+
+React.js / TS / Parcel
+
 ## 🔗 배포링크
 
 [🔗 배포 링크 이동](https://rememberme-ten.vercel.app/)
