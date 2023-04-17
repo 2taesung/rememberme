@@ -1,10 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
-
 import { ReactRouterObj } from './routes/routes';
 
-// Render your React component instead
+if (process.env.NODE_ENV === 'development') {
+  const { worker } = require('./mocks/setup');
+  worker.start();
+}
+
 const root = createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
