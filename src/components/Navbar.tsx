@@ -1,20 +1,16 @@
-// import Lottie from 'react-lottie';
-// import animationData from '../lotties/kiss-of-the-heart.json';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 export default function Navbar() {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice',
-  //   },
-  // };
 
   return (
     <>
       <div>Navbar</div>
-      {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
+      <Player
+        autoplay
+        loop
+        src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
+        style={{ height: '300px', width: '300px' }}
+      />
     </>
   );
 }
