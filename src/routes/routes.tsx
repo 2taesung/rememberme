@@ -1,7 +1,8 @@
-import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
-import MapSection from '../components/MapSection';
 import Layout from './Layout';
+import PositionPage from '../components/PositionPage';
+import TimePage from '../components/TimePage';
+import TreePage from '../components/TreePage';
 
 type RouterItem = {
   path: string;
@@ -14,14 +15,22 @@ export const RouterInfo: RouterItem[] = [
     element: <App />,
   },
   {
-    path: '/map',
-    element: <MapSection />,
+    path: '/position',
+    element: <PositionPage />,
+  },
+  {
+    path: '/time',
+    element: <TimePage />,
+  },
+  {
+    path: '/tree',
+    element: <TreePage />,
   },
 ];
 
-export const ReactRouterObj = createBrowserRouter([
+export const routes = [
   {
     element: <Layout />,
     children: RouterInfo,
   },
-]);
+];

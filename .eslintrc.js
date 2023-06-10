@@ -4,18 +4,21 @@ module.exports = {
     es2021: true,
     jest: true,
   },
+
   extends: [
     'airbnb',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
+
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+
   plugins: ['react', '@typescript-eslint'],
   settings: {
     'import/resolver': {
@@ -24,10 +27,12 @@ module.exports = {
       },
     },
   },
+
   rules: {
     indent: ['error', 2],
     'no-trailing-spaces': 'error',
     curly: 'error',
+    'react/react-in-jsx-scope': 'off',
     'brace-style': 'error',
     'no-multi-spaces': 'error',
     'space-infix-ops': 'error',
@@ -44,18 +49,8 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'key-spacing': ['error', { mode: 'strict' }],
+    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': ['error', { before: true, after: true }],
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: [
-          '**/*.test.js',
-          '**/*.test.jsx',
-          '**/*.test.ts',
-          '**/*.test.tsx',
-        ],
-      },
-    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -72,6 +67,5 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     ],
-    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
   },
 };
