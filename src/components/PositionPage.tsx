@@ -4,7 +4,7 @@ export default function PositionPage() {
   return (
     <div>
       <h1>PositionPage</h1>
-      {/* <MapSection /> */}
+      <MapSection />
     </div>
   );
 }
