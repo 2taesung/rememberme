@@ -7,7 +7,7 @@
 
 ## 💿 개발 환경 및 스택
 
-React.js / TS / Parcel
+React.js / TS / Vite
 
 ## 🔗 배포링크
 

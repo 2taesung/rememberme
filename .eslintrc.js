@@ -50,9 +50,9 @@ module.exports = {
     // 'object-curly-spacing': ['error', 'always'],
     // 'key-spacing': ['error', { mode: 'strict' }],
     'arrow-parens': ['error', 'as-needed'],
-    // 'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['error', { before: true, after: true }],
     'import/no-extraneous-dependencies': [
-      'error',
+      'warn',
       {
         devDependencies: [
           '**/*.test.js',
