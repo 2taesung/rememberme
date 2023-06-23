@@ -2,8 +2,11 @@ import { Reset } from 'styled-reset';
 // import { useEffect } from 'react';
 import GlobalStyle from './styles/GlobalStyle';
 import MainPage from './components/MainPage';
+import usePostionListStore from './hooks/usePositionListStore';
 
 export default function App() {
+  const [snapshot] = usePostionListStore();
+  const { positions } = snapshot;
   // useEffect(() => {
   //   (async function mswCheckFetch() {
   //     const response = await fetch('/products/1').then(res => res.json());
@@ -25,6 +28,9 @@ export default function App() {
     <>
       <Reset />
       <GlobalStyle />
+      {positions.map(position => (
+        <p key={position.id}>{position.title}</p>
+      ))}
       <p>Hello</p>
       <MainPage />
     </>
