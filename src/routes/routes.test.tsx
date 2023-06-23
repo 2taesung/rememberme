@@ -18,7 +18,7 @@ describe('routes', () => {
       renderRouter('/');
 
       await waitFor(() => {
-        screen.getByText(/Hello/);
+        screen.getByText(/Main/);
       });
     });
   });

@@ -1,6 +1,7 @@
 import { Reset } from 'styled-reset';
 // import { useEffect } from 'react';
 import GlobalStyle from './styles/GlobalStyle';
+import MainPage from './components/MainPage';
 
 export default function App() {
   // useEffect(() => {
@@ -25,6 +26,7 @@ export default function App() {
       <Reset />
       <GlobalStyle />
       <p>Hello</p>
+      <MainPage />
     </>
   );
 }

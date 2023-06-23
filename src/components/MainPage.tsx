@@ -1,7 +1,6 @@
 import usePostionListStore from '../hooks/usePositionListStore';
-import MapSection from './MapSection';
 
-export default function PositionPage() {
+export default function MainPage() {
   const [snapshot, postionListStore] = usePostionListStore();
   const { positions } = snapshot;
 
@@ -13,17 +12,15 @@ export default function PositionPage() {
       contents: 'contents',
     });
   };
-
   return (
-    <div>
-      <h1>PositionPage</h1>
+    <>
+      <p>MainPage</p>
       <button type="button" aria-label="Test" onClick={addItem}>
         TEST
       </button>
       {positions.map(position => (
         <p key={position.id}>{position.title}</p>
       ))}
-      <MapSection />
-    </div>
+    </>
   );
 }
