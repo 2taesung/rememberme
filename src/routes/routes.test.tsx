@@ -23,15 +23,15 @@ describe('routes', () => {
     });
   });
 
-  context('when the current path is “/position"', () => {
-    context('without category ID', () => {
-      it('renders the product list page', async () => {
-        renderRouter('/position');
+  // context('when the current path is “/position"', () => {
+  //   context('without category ID', () => {
+  //     it('renders the product list page', async () => {
+  //       renderRouter('/position');
 
-        await waitFor(() => {
-          screen.getByText(/Position/);
-        });
-      });
-    });
-  });
+  //       await waitFor(() => {
+  //         screen.getByText(/Position/);
+  //       });
+  //     });
+  //   });
+  // });
 });

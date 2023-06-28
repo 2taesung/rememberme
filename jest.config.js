@@ -20,4 +20,5 @@ module.exports = {
       },
     ],
   },
+  transformIgnorePatterns: ['node_modules/(?!react-kakao-maps-sdk)'],
 };

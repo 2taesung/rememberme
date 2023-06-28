@@ -31,7 +31,7 @@ export default function App() {
       {positions.map(position => (
         <p key={position.id}>{position.title}</p>
       ))}
-      <p>Hello</p>
+      <p>Main</p>
       <MainPage />
     </>
   );

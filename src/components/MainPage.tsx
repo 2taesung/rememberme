@@ -14,7 +14,6 @@ export default function MainPage() {
   };
   return (
     <>
-      <p>MainPage</p>
       <button type="button" aria-label="Test" onClick={addItem}>
         TEST
       </button>

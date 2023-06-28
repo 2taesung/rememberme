@@ -13,7 +13,7 @@ describe('App', () => {
         </MemoryRouter>,
       );
 
-      screen.getByText(/Hello/);
+      screen.getByText(/Main/);
     });
   });
 });
