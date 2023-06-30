@@ -1,17 +1,18 @@
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
+import { CurrentPosition } from '../types/CurrentPosition';
 
-export default function MapSection() {
+export default function MapSection({
+  currentLat,
+  currentLng,
+}: CurrentPosition) {
   return (
-    <>
-      <h1>MapSection</h1>
-      <Map
-        center={{ lat: 33.5563, lng: 126.79581 }}
-        style={{ width: '100%', height: '360px' }}
-      >
-        <MapMarker position={{ lat: 33.55635, lng: 126.795841 }}>
-          <div style={{ color: '#000' }}>Hello World!</div>
-        </MapMarker>
-      </Map>
-    </>
+    <Map
+      center={{ lat: currentLat, lng: currentLng }}
+      style={{ width: '100%', height: '360px' }}
+    >
+      <MapMarker position={{ lat: currentLat, lng: currentLng }}>
+        <div style={{ color: '#000' }}>Now</div>
+      </MapMarker>
+    </Map>
   );
 }
