@@ -1,8 +1,8 @@
 import App from '../App';
 import Layout from './Layout';
-import PositionPage from '../components/PositionPage';
-import TimePage from '../components/TimePage';
-import TreePage from '../components/TreePage';
+import PositionPage from '../pages/PositionPage';
+import TimePage from '../pages/TimePage';
+import TreePage from '../pages/TreePage';
 
 type RouterItem = {
   path: string;

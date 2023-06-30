@@ -1,9 +1,11 @@
 import usePostionListStore from '../hooks/usePositionListStore';
-import MapSection from './MapSection';
+import MapSection from '../components/MapSection';
+import useCurrentPosition from '../hooks/useCurrentPosition';
 
 export default function PositionPage() {
   const [snapshot, postionListStore] = usePostionListStore();
   const { positions } = snapshot;
+  const { currentLat, currentLng } = useCurrentPosition();
 
   const addItem = () => {
     postionListStore.addItem({
@@ -23,7 +25,7 @@ export default function PositionPage() {
       {positions.map(position => (
         <p key={position.id}>{position.title}</p>
       ))}
-      <MapSection />
+      <MapSection currentLat={currentLat} currentLng={currentLng} />
     </div>
   );
 }

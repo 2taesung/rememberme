@@ -1,7 +1,7 @@
 import { Reset } from 'styled-reset';
 // import { useEffect } from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import MainPage from './components/MainPage';
+import MainPage from './pages/MainPage';
 import usePostionListStore from './hooks/usePositionListStore';
 
 export default function App() {
