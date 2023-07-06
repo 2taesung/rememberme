@@ -7,7 +7,15 @@
 
 ## 💿 개발 환경 및 스택
 
-React.js / TS / Vite
+React.js / TS / Vite / useSyncExternalStore
+
+## 🧨 기술적 포인트
+
+- React 18의 useSyncExternalStore를 이용한 전역 상태 직접 개발
+- 모든 상태를 잘 정의해 전역 상태로 사용(혹자는 micro external state라고 부름)
+- 상태 정의를 위해 객체지향 개념을 적극적으로 활용
+- TDD 설계 시도를 통해 실용성 및 인사이트 체크
+- 지역성에 근거한 폴더 구조 및 컴포넌트 관리
 
 ## 🔗 배포링크
 
