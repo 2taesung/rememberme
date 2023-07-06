@@ -38,18 +38,39 @@ npm && npm dev
 
 ```
 📦 src
+├── 📂 components
+│   ├── 📄 lottiePractice.tsx
+│   ├── 📄 ...
+├── 📂 hooks
+│   ├── 📄 useCurrentPosition.tsx
+│   ├── 📄 ...
+├── 📂 mocks
+│   ├── 📄 handler.ts
+│   └── 📄 setup.ts
+├── 📂 models
+│   ├── 📄 PositionList.ts
+│   ├── 🧪 PositionList.test.ts
+│   ├── 📄 ...
+├── 📂 pages
+│   ├── 📄 MainPage.tsx
+│   ├── 📄 ...
+├── 📂 routes
+│   ├── 📄 Layout.tsx
+│   └── 📄 routes.tsx
+├── 📂 stores
+│   ├── 📄 PositionListStore.ts
+│   ├── 🧪 PositionListStore.test.ts
+│   ├── 📄 ...
+├── 📂 styles
+│   └── 📄 GlobalStyle.ts
+├── 📂 types
+│   ├── 📄 CurrentPosition.ts
+│   └── 📄 Position.ts
 ├── 📄 App.tsx
 ├── 🧪 App.test.tsx
 ├── 📄 main.tsx
 ├── 📂 apis
 │   └── 📄 api.ts
-├── 📂 components
-│   ├── 📄 Navbar.tsx
-│
-├── 📂 route
-│   ├── 📄 Layout.tsx
-│   └── 📄 routes.tsx
-└── 📂 types
 ```
 
 ## ⚠️ 주의사항
