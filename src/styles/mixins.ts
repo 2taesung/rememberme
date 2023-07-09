@@ -4,6 +4,11 @@ export const layooutBox = css`
   border: 1px solid black;
 `;
 
+export const wh = css`
+  width: 100vw;
+  height: 100vh;
+`;
+
 export const flexMixins = {
   flexCenter: css`
     display: flex;
