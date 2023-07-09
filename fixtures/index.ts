@@ -1,5 +1,5 @@
-import products from './products';
+import positions from './positions';
 
 export default {
-  products,
+  positions,
 };
