@@ -1,12 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import { flexMixins, layooutBox } from '../styles/mixins';
+import { flexMixins } from '../styles/mixins';
 
 const StyledLayout = styled.div`
-    ${layooutBox}
-  ${flexMixins.flexColumn}
-
+  ${flexMixins.flexCenter}
+  
   width: 100vw;
 `;
 
