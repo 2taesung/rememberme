@@ -36,41 +36,50 @@ npm && npm dev
 
 ## 📦 폴더구조
 
-```
-📦 src
-├── 📂 components
-│   ├── 📄 lottiePractice.tsx
-│   ├── 📄 ...
-├── 📂 hooks
-│   ├── 📄 useCurrentPosition.tsx
-│   ├── 📄 ...
-├── 📂 mocks
-│   ├── 📄 handler.ts
-│   └── 📄 setup.ts
-├── 📂 models
-│   ├── 📄 PositionList.ts
-│   ├── 🧪 PositionList.test.ts
-│   ├── 📄 ...
-├── 📂 pages
-│   ├── 📄 MainPage.tsx
-│   ├── 📄 ...
-├── 📂 routes
-│   ├── 📄 Layout.tsx
-│   └── 📄 routes.tsx
-├── 📂 stores
-│   ├── 📄 PositionListStore.ts
-│   ├── 🧪 PositionListStore.test.ts
-│   ├── 📄 ...
-├── 📂 styles
-│   └── 📄 GlobalStyle.ts
-├── 📂 types
-│   ├── 📄 CurrentPosition.ts
-│   └── 📄 Position.ts
-├── 📄 App.tsx
-├── 🧪 App.test.tsx
-├── 📄 main.tsx
-├── 📂 apis
-│   └── 📄 api.ts
+```markdown
+📦src
+┣ 📂components
+┃ ┣ 📜MapSection.tsx
+┃ ┗ 📜lottiePractice.tsx
+┣ 📂hooks
+┃ ┣ 📜useCurrentPosition.tsx
+┃ ┗ 📜usePositionListStore.ts
+┣ 📂mocks
+┃ ┣ 📜handlers.ts
+┃ ┗ 📜setup.ts
+┣ 📂models
+┃ ┣ 📜Position.ts
+┃ ┣ 📜PositionList.test.ts
+┃ ┗ 📜PositionList.ts
+┣ 📂pages
+┃ ┣ 📜MainPage.tsx
+┃ ┣ 📜PositionPage.tsx
+┃ ┣ 📜TimePage.tsx
+┃ ┗ 📜TreePage.tsx
+┣ 📂positionPage
+┣ 📂routes
+┃ ┣ 📜Layout.tsx
+┃ ┣ 📜Menus.tsx
+┃ ┣ 📜Navbar.tsx
+┃ ┣ 📜routes.test.tsx
+┃ ┗ 📜routes.tsx
+┣ 📂stores
+┃ ┣ 📜PositionListStore.test.ts
+┃ ┣ 📜PositionListStore.ts
+┃ ┗ 📜Store.ts
+┣ 📂styles
+┃ ┣ 📜GlobalStyle.ts
+┃ ┗ 📜mixins.ts
+┣ 📂timePage
+┣ 📂treePage
+┣ 📂types
+┃ ┣ 📜CurrentPosition.ts
+┃ ┗ 📜Position.ts
+┣ 📜App.test.tsx
+┣ 📜App.tsx
+┣ 📜constants.ts
+┣ 📜main.tsx
+┗ 📜types.ts
 ```
 
 ## ⚠️ 주의사항
