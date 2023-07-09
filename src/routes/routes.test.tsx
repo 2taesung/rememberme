@@ -1,7 +1,9 @@
 import { render, screen, waitFor } from '@testing-library/react';
 
 import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import { routes } from './routes';
+import defaultTheme from '../styles/defaultTheme';
 
 const context = describe;
 
@@ -10,7 +12,11 @@ describe('routes', () => {
     const router = createMemoryRouter(routes, {
       initialEntries: [path],
     });
-    render(<RouterProvider router={router} />);
+    render(
+      <ThemeProvider theme={defaultTheme}>
+        <RouterProvider router={router} />
+      </ThemeProvider>,
+    );
   }
 
   context('when the current path is “/”', () => {
@@ -18,7 +24,7 @@ describe('routes', () => {
       renderRouter('/');
 
       await waitFor(() => {
-        screen.getByText(/Main/);
+        screen.getByText(/Remember Me!/);
       });
     });
   });
