@@ -1,18 +1,29 @@
 import styled from 'styled-components';
-import usePostionListStore from '../hooks/usePositionListStore';
-import { flexMixins } from '../styles/mixins';
+import { flexMixins, wh } from '../styles/mixins';
+import AllList from '../mainPage/AllList';
 
 const MainLayout = styled.div`
-    ${flexMixins.flexCenter}
-  `;
+  ${flexMixins.flexColumn}
+  ${wh}
+
+  justify-content: flex-start;
+`;
+
+const MainHead = styled.div`
+  top: 0;    
+
+  margin: 20px;
+
+  font-size: ${({ theme }) => theme.fontSizes.extraHuge};
+`;
 
 export default function MainPage() {
-  const [snapshot] = usePostionListStore();
-  const { positions } = snapshot;
-
   return (
     <MainLayout>
-      <h1>Main</h1>
+      <MainHead>
+        <h1>Remember Me!</h1>
+      </MainHead>
+      <AllList />
     </MainLayout>
   );
 }
