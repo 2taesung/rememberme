@@ -15,6 +15,10 @@ export const RouterInfo: RouterItem[] = [
     element: <App />,
   },
   {
+    path: '/home',
+    element: <App />,
+  },
+  {
     path: '/position',
     element: <PositionPage />,
   },
