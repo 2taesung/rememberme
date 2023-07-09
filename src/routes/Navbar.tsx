@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import NavigationMenu from './Menus';
+// import NavigationMenu from './Menus';
 import { flexMixins, layooutBox } from '../styles/mixins';
+import Nav from './Nav';
 
 const NavbarLayout = styled.div`
-    ${layooutBox}
+  ${layooutBox}
   ${flexMixins.flexRow}
 
   position: fixed;
@@ -18,8 +19,7 @@ const NavbarLayout = styled.div`
 export default function Navbar() {
   return (
     <NavbarLayout>
-      <h1>Navbar</h1>
-      <NavigationMenu />
+      <Nav />
     </NavbarLayout>
   );
 }
