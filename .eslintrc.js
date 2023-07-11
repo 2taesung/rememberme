@@ -29,6 +29,7 @@ module.exports = {
   },
 
   rules: {
+    'wrap-iife': false,
     indent: ['error', 2],
     'object-curly-newline': 'off',
     'no-trailing-spaces': 'error',
