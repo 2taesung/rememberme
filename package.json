@@ -61,5 +61,8 @@
     "styled-components": "^5.3.11",
     "styled-reset": "^4.4.5",
     "vite": "^4.3.9"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
