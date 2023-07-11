@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import NavigationMenu from './Menus';
 import { flexMixins, layooutBox } from '../styles/mixins';
 import Nav from './Nav';
 
@@ -13,7 +12,6 @@ const NavbarLayout = styled.div`
   width: 100vw;
   height: 80px;
   max-width: 800px;
-
 `;
 
 export default function Navbar() {
