@@ -1,6 +1,7 @@
 import usePostionListStore from '../hooks/usePositionListStore';
 import MapSection from '../components/MapSection';
 import useCurrentPosition from '../hooks/useCurrentPosition';
+import { MainHead, MainLayout } from './styled';
 
 export default function PositionPage() {
   const [snapshot, postionListStore] = usePostionListStore();
@@ -17,8 +18,10 @@ export default function PositionPage() {
   };
 
   return (
-    <div>
-      <h1>PositionPage</h1>
+    <MainLayout>
+      <MainHead>
+        <h1>PositionPage</h1>
+      </MainHead>
       <button type="button" aria-label="Test" onClick={addItem}>
         TEST
       </button>
@@ -26,6 +29,6 @@ export default function PositionPage() {
         <p key={position.id}>{position.title}</p>
       ))}
       <MapSection currentLat={currentLat} currentLng={currentLng} />
-    </div>
+    </MainLayout>
   );
 }
