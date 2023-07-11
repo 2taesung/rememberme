@@ -3,6 +3,7 @@ import Layout from './Layout';
 import PositionPage from '../pages/PositionPage';
 import TimePage from '../pages/TimePage';
 import TreePage from '../pages/TreePage';
+import MainPage from '../pages/MainPage';
 
 type RouterItem = {
   path: string;
@@ -12,11 +13,11 @@ type RouterItem = {
 export const RouterInfo: RouterItem[] = [
   {
     path: '/',
-    element: <App />,
+    element: <MainPage />,
   },
   {
     path: '/home',
-    element: <App />,
+    element: <MainPage />,
   },
   {
     path: '/position',
