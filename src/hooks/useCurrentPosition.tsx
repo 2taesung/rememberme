@@ -8,7 +8,7 @@ export default function useCurrentPosition(): CurrentPosition {
   });
 
   useEffect(() => {
-    navigator.geolocation?.watchPosition(position => {
+    navigator.geolocation?.getCurrentPosition(position => {
       const currentLat: number = position.coords.latitude; // 위도
       const currentLng: number = position.coords.longitude; // 경도
 
