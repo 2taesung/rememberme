@@ -1,4 +1,3 @@
-import App from '../App';
 import Layout from './Layout';
 import PositionPage from '../pages/PositionPage';
 import TimePage from '../pages/TimePage';
