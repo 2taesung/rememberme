@@ -1,6 +1,7 @@
 import PositionListStore from './PositionListStore';
 
 import Position from '../models/Position';
+import { positions } from '../../fixtures';
 
 test('PositionListStore', () => {
   const positionListStore = new PositionListStore();
@@ -19,14 +20,14 @@ test('PositionListStore', () => {
   expect(handleChange).toBeCalled();
 
   expect(positionListStore.getSnapshot()).toEqual({
-    positions: [
-      new Position({
-        id: 1,
-        lat: 33.55635,
-        lng: 126.795841,
-        title: '1',
-        contents: 'contents',
-      }),
+    positions: [...positions,
+    new Position({
+      id: positions[positions.length - 1].id + 1,
+      lat: 33.55635,
+      lng: 126.795841,
+      title: '1',
+      contents: 'contents',
+    }),
     ],
   });
 });
