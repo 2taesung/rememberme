@@ -5,3 +5,8 @@ export type TPosition = {
   title: string;
   contents: string;
 };
+
+export type TCurrentPosition = {
+  currentLat: number;
+  currentLng: number;
+};
