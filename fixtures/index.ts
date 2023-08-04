@@ -1,5 +1,4 @@
-import positions from './positions';
+import { positions } from './positions';
+import { times } from './times';
 
-export default {
-  positions,
-};
+export { positions, times };

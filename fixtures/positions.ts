@@ -1,6 +1,6 @@
-import { TPosition } from '../src/types/Position';
+import { TPosition } from "../src/types";
 
-const positions: TPosition[] = [
+export const positions: TPosition[] = [
   {
     id: 1,
     lat: 33.55635,
@@ -16,5 +16,3 @@ const positions: TPosition[] = [
     contents: 'contents',
   },
 ];
-
-export default positions;
