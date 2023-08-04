@@ -10,22 +10,22 @@ import { Radar } from '@mui/icons-material';
 import PositionList from './PositionList';
 
 export default function AllList() {
-  const [open, setOpen] = useState(true);
+  const [positionListOpen, setPositionListOpen] = useState(true);
 
-  const handleClick = () => {
-    setOpen(!open);
+  const positionHandleClick = () => {
+    setPositionListOpen(!positionListOpen);
   };
 
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-      <ListItemButton onClick={handleClick}>
+      <ListItemButton onClick={positionHandleClick}>
         <ListItemIcon>
           <Radar />
         </ListItemIcon>
         <ListItemText primary="Position" />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        {positionListOpen ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={open} timeout="auto" unmountOnExit>
+      <Collapse in={positionListOpen} timeout="auto" unmountOnExit>
         <PositionList />
       </Collapse>
     </List>
