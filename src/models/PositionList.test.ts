@@ -1,4 +1,5 @@
 import PositionList from './PositionList';
+import { positions } from '../../fixtures';
 
 describe('PositionList', () => {
   let positionList: PositionList;
@@ -8,21 +9,11 @@ describe('PositionList', () => {
   });
 
   it('adds an Position', () => {
-    positionList = positionList.addPosition({
-      lat: 33.55635,
-      lng: 126.795841,
-      title: '1',
-      contents: 'contents',
-    });
+    positionList = positionList.addPosition(positions[0]);
 
     expect(positionList.positions).toHaveLength(1);
 
-    positionList = positionList.addPosition({
-      lat: 33.55635,
-      lng: 126.795841,
-      title: '2',
-      contents: 'contents',
-    });
+    positionList = positionList.addPosition(positions[1]);
 
     expect(positionList.positions).toHaveLength(2);
   });
