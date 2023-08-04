@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { CurrentPosition } from '../types/CurrentPosition';
+import { TCurrentPosition } from '../types';
 
-export default function useCurrentPosition(): CurrentPosition {
+export default function useCurrentPosition(): TCurrentPosition {
   const [currentPosition, setCurrentPosition] = useState({
     currentLat: 0,
     currentLng: 0,
