@@ -7,7 +7,22 @@ describe('fetchPositions', () => {
   beforeEach(() => {
     global.fetch = jest.fn();
     (global.fetch as jest.Mock).mockResolvedValue({
-      json: jest.fn().mockResolvedValue(positions),
+      json: jest.fn().mockResolvedValue([
+        {
+          id: 1,
+          lat: 33.55635,
+          lng: 126.795841,
+          title: '1번 타이틀',
+          contents: 'contents',
+        },
+        {
+          id: 2,
+          lat: 33.55635,
+          lng: 126.795841,
+          title: '2번 타이틀',
+          contents: 'contents',
+        },
+      ]),
     });
     consoleErrorMock = jest.spyOn(console, 'error').mockImplementation(() => { });
   });
