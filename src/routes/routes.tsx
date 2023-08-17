@@ -1,8 +1,10 @@
+import React, { Suspense } from 'react';
 import Layout from './Layout';
-import PositionPage from '../pages/PositionPage';
-import TimePage from '../pages/TimePage';
-import TreePage from '../pages/TreePage';
-import MainPage from '../pages/MainPage';
+
+const PositionPage = React.lazy(() => import('../pages/PositionPage'));
+const TimePage = React.lazy(() => import('../pages/TimePage'));
+const TreePage = React.lazy(() => import('../pages/TreePage'));
+const MainPage = React.lazy(() => import('../pages/MainPage'));
 
 type RouterItem = {
   path: string;
@@ -34,7 +36,11 @@ export const RouterInfo: RouterItem[] = [
 
 export const routes = [
   {
-    element: <Layout />,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Layout />
+      </Suspense>
+    ),
     children: RouterInfo,
   },
 ];
