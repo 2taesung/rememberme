@@ -3,7 +3,6 @@ import { flexMixins, layooutBox } from '../styles/mixins';
 import Nav from './Nav';
 
 const NavbarLayout = styled.div`
-  ${layooutBox}
   ${flexMixins.flexRow}
 
   position: fixed;
@@ -12,6 +11,8 @@ const NavbarLayout = styled.div`
   width: 100vw;
   height: 80px;
   max-width: 800px;
+  border-top: 1px solid ${props => props.theme.colors.secondary};
+  border-radius: 20px;
 `;
 
 export default function Navbar() {
