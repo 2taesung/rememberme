@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import Layout from './Layout';
+import LoadingAnimation from '../components/LoadingAnimation';
 
 const PositionPage = React.lazy(() => import('../pages/PositionPage'));
 const TimePage = React.lazy(() => import('../pages/TimePage'));
@@ -37,7 +38,7 @@ export const RouterInfo: RouterItem[] = [
 export const routes = [
   {
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingAnimation />}>
         <Layout />
       </Suspense>
     ),
