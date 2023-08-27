@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexMixins, wh } from '../../styles/mixins';
+import { flexMixins, wh, maxWidth } from '../../styles/mixins';
 
 export const MainLayout = styled.div`
   ${flexMixins.flexColumn}
@@ -14,5 +14,12 @@ export const MainHead = styled.div`
   margin: 20px;
 
   font-size: ${({ theme }) => theme.fontSizes.extraHuge};
+`;
+
+export const MainSection = styled.div`
+  ${maxWidth}
+
+  width: 100%;
+  font-size: ${({ theme }) => theme.fontSizes.normal};
 `;
 
