@@ -1,10 +1,10 @@
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
-import { CurrentPosition } from '../types/CurrentPosition';
+import { TCurrentPosition } from '../types';
 
 export default function MapSection({
   currentLat,
   currentLng,
-}: CurrentPosition) {
+}: TCurrentPosition) {
   return (
     <Map
       center={{ lat: currentLat, lng: currentLng }}
