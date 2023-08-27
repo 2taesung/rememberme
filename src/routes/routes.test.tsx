@@ -7,6 +7,13 @@ import defaultTheme from '../styles/defaultTheme';
 
 const context = describe;
 
+// Jest mock
+jest.mock('@lottiefiles/react-lottie-player', () => {
+  return {
+    Player: () => <div>Lottie Animation</div>,
+  };
+});
+
 describe('routes', () => {
   function renderRouter(path: string) {
     const router = createMemoryRouter(routes, {
