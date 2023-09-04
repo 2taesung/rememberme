@@ -1,4 +1,4 @@
-import AllList from '../mainPage/AllList';
+import AllList from '@src/mainPage/AllList';
 import { MainHead, MainLayout } from './styled';
 
 export default function MainPage() {

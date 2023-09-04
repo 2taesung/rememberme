@@ -1,5 +1,5 @@
+import { TCurrentPosition } from '@src/types';
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
-import { TCurrentPosition } from '../types';
 
 export default function MapSection({
   currentLat,

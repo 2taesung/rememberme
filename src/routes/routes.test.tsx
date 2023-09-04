@@ -3,7 +3,7 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { routes } from './routes';
-import defaultTheme from '../styles/defaultTheme';
+import defaultTheme from '@src/styles/defaultTheme';
 
 const context = describe;
 

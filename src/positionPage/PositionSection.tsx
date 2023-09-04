@@ -1,6 +1,6 @@
-import useCurrentPosition from '../hooks/useCurrentPosition';
-import usePostionListStore from '../hooks/usePositionListStore';
+import usePostionListStore from '@src/hooks/usePositionListStore';
 import MapSection from './MapSection';
+import useCurrentPosition from '@src/hooks/useCurrentPosition';
 
 export default function PositionSection() {
   const [snapshot, postionListStore] = usePostionListStore();

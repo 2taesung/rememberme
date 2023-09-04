@@ -1,5 +1,5 @@
+import { flexMixins, maxWidth, wh } from '@src/styles/mixins';
 import styled from 'styled-components';
-import { flexMixins, wh, maxWidth } from '../../styles/mixins';
 
 export const MainLayout = styled.div`
   ${flexMixins.flexColumn}

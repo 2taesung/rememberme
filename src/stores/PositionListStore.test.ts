@@ -1,7 +1,6 @@
+import { positions } from '@/fixtures';
 import PositionListStore from './PositionListStore';
-
-import Position from '../models/Position';
-import { positions } from '../../fixtures';
+import Position from '@src/models/Position';
 
 test('PositionListStore', () => {
   const positionListStore = new PositionListStore();

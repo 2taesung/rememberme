@@ -1,4 +1,5 @@
-import { TPosition } from '../types/Position';
+
+import { TPosition } from '@src/types';
 import Position from './Position';
 
 export default class PositionList {

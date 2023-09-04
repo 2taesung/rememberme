@@ -6,7 +6,7 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import { Radar } from '@mui/icons-material';
 import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from 'react-router-dom';
-import MENUS from '../data/menus';
+import MENUS from '@src/data/menus';
 
 const ICONS: Map<string, () => React.ReactElement> = new Map([
   ['position', () => <Radar />],

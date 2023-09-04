@@ -1,5 +1,5 @@
+import { positions } from '@/fixtures';
 import PositionList from './PositionList';
-import { positions } from '../../fixtures';
 
 describe('PositionList', () => {
   let positionList: PositionList;

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import PositionList from './PositionList';
-import { positions } from '../../fixtures';
+import { positions } from '@/fixtures';
 
 jest.mock('../hooks/usePositionListStore', () => ({
   __esModule: true,

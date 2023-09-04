@@ -1,4 +1,4 @@
-import { TPosition } from '../types/Position';
+import { TPosition } from "@src/types";
 
 export default class Position {
   readonly id;

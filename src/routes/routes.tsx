@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import Layout from './Layout';
-import LoadingAnimation from '../components/LoadingAnimation';
+import LoadingAnimation from '@src/components/LoadingAnimation';
 
 const PositionPage = React.lazy(() => import('../pages/PositionPage'));
 const TimePage = React.lazy(() => import('../pages/TimePage'));

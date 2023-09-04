@@ -1,7 +1,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
+// import { positions, times } from 
+import { positions, times } from '@/fixtures';
+import { TPosition } from '@src/types';
 import { rest } from 'msw';
-import { positions, times } from '../../fixtures';
-import { TPosition } from '../types';
 
 export const handlers = [
   rest.get('/test/positions', (req, res, ctx) => {

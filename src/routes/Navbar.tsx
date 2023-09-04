@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { flexMixins, layooutBox } from '../styles/mixins';
 import Nav from './Nav';
+import { flexMixins } from '@src/styles/mixins';
 
 const NavbarLayout = styled.div`
   ${flexMixins.flexRow}

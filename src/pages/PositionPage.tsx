@@ -1,5 +1,5 @@
+import PositionSection from '@src/positionPage/PositionSection';
 import { MainHead, MainLayout, MainSection } from './styled';
-import PositionSection from '../positionPage/PositionSection';
 
 export default function PositionPage() {
   return (

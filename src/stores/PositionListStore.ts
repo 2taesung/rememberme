@@ -1,9 +1,8 @@
+import Position from '@src/models/Position';
 import Store from './Store';
-
-import PositionList from '../models/PositionList';
-import Position from '../models/Position';
-import { TPosition } from '../types/Position';
-import { positions } from '../../fixtures';
+import PositionList from '@src/models/PositionList';
+import { positions } from '@/fixtures';
+import { TPosition } from '@src/types';
 
 export type PositionListStoreSnapshot = {
   positions: Position[];

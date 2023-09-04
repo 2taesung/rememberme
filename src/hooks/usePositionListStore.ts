@@ -1,8 +1,5 @@
+import PositionListStore, { PositionListStoreSnapshot } from '@src/stores/PositionListStore';
 import { useSyncExternalStore } from 'react';
-
-import PositionListStore, {
-  PositionListStoreSnapshot,
-} from '../stores/PositionListStore';
 
 const positionListStore = new PositionListStore();
 

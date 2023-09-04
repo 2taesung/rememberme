@@ -1,4 +1,4 @@
-export type TTime = {
+export type TimeT = {
   id: number;
   ts: string;
   title: string;

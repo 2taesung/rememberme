@@ -1,4 +1,4 @@
-import { TPosition } from "../src/types";
+import { TPosition } from "@/src/types";
 
 export const positions: TPosition[] = [
   {

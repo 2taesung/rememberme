@@ -1,4 +1,4 @@
-import { TPosition } from "../types";
+import { TPosition } from "@src/types";
 
 export const fetchPositions = async (): Promise<TPosition[]> => {
   try {

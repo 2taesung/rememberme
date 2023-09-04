@@ -1,6 +1,6 @@
-import { TTime } from '../src/types';
+import { TimeT } from "@src/types/Time";
 
-export const times: TTime[] = [
+export const times: TimeT[] = [
   {
     id: 1,
     ts: '2023-08-04T05: 37:00.931Z',

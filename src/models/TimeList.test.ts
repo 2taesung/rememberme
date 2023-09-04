@@ -1,5 +1,5 @@
+import { times } from '@/fixtures';
 import TimeList from './TimeList';
-import { times } from '../../fixtures';
 
 describe('TimeList', () => {
   let timeList: TimeList;

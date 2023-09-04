@@ -1,5 +1,5 @@
-import { TTime } from "./Time";
 import { TCurrentPosition, TPosition } from "./Position"
+import { TimeT } from "./Time"
 
 
-export { TTime, TPosition, TCurrentPosition }
+export { TimeT, TPosition, TCurrentPosition }

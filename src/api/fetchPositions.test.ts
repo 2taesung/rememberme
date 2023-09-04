@@ -1,5 +1,4 @@
 import { fetchPositions } from './fetchPositions';
-import { positions } from '../../fixtures';
 
 describe('fetchPositions', () => {
   let consoleErrorMock: jest.SpyInstance;

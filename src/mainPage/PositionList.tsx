@@ -1,4 +1,5 @@
-import usePostionListStore from '../hooks/usePositionListStore';
+
+import usePostionListStore from '@src/hooks/usePositionListStore';
 import PositionItem from './PositionItem';
 import List from '@mui/material/List';
 
