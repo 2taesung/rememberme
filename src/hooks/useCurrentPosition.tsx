@@ -1,5 +1,5 @@
+import { TCurrentPosition } from '@src/types';
 import { useEffect, useState } from 'react';
-import { TCurrentPosition } from '../types';
 
 export default function useCurrentPosition(): TCurrentPosition {
   const [currentPosition, setCurrentPosition] = useState({
